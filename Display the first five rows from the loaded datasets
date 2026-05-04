@@ -1,0 +1,7 @@
+import pandas as pd
+
+# Convert list of dictionaries to a Pandas DataFrame
+df = pd.DataFrame(data)
+
+# Show the first 5 rows to make sure it looks right
+df.head()
