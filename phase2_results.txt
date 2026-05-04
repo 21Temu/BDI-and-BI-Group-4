@@ -1,0 +1,38 @@
+PHASE 2 - MAPREDUCE RESULTS
+============================================================
+
+JOB 1: Average Rating Per Product (Top 10)
+1. 1059998254: 5.00 stars
+2. 1432765027: 5.00 stars
+3. 1465023879: 5.00 stars
+4. 1616826053: 5.00 stars
+5. 1616855711: 5.00 stars
+6. 6465354276: 5.00 stars
+7. 6875467534: 5.00 stars
+8. 9573213893: 5.00 stars
+9. 9803750623: 5.00 stars
+10. 9875908576: 5.00 stars
+
+JOB 2: Review Count Per User (Top 10)
+1. A25E8V5JMW43RY: 7 reviews
+2. A1TIQNQJZ2LDNW: 5 reviews
+3. A14JBDSWKPKTZA: 5 reviews
+4. A243HY69GIAHFI: 5 reviews
+5. A7RV1KU5O0II9: 5 reviews
+6. A1QM7D6Q5YRDRK: 4 reviews
+7. A2PH6CHHP98NA2: 4 reviews
+8. AT8TIN5JKHO2V: 4 reviews
+9. A2HDTOF8222KN3: 4 reviews
+10. A3NCIN6TNL0MGA: 4 reviews
+
+JOB 3: Top 10 Most Reviewed Products
+1. 0972683275: 479 reviews (avg: 4.51)
+2. B00000J1T1: 449 reviews (avg: 4.72)
+3. B00000J1U8: 448 reviews (avg: 4.56)
+4. B00000J1V5: 439 reviews (avg: 4.62)
+5. 6073894996: 434 reviews (avg: 3.73)
+6. 106171327X: 295 reviews (avg: 4.65)
+7. 9573212919: 268 reviews (avg: 3.81)
+8. B000001ON6: 246 reviews (avg: 4.00)
+9. 9983039281: 238 reviews (avg: 4.57)
+10. 9983891212: 182 reviews (avg: 4.61)
