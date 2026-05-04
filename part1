@@ -1,0 +1,31 @@
+import pandas as pd
+import gzip
+import json
+import matplotlib.pyplot as plt
+
+print("="*50)
+print("phase1. Electronics Data")
+print("="*50)
+
+# Load data
+reviews = []
+with gzip.open('Electronics_sample_50k.json.gz', 'rt', encoding='utf-8') as f:
+    for i, line in enumerate(f):
+        if i >= 10000:
+            break
+        reviews.append(json.loads(line))
+
+df = pd.DataFrame(reviews)
+
+print(f"\n Loaded {len(df):,} reviews")
+print(f"\n📊 Rating Distribution:")
+print(df['overall'].value_counts().sort_index())
+
+# Plot
+df['overall'].hist(bins=5, edgecolor='black')
+plt.title('Electronics Product Ratings')
+plt.xlabel('Rating (Stars)')
+plt.ylabel('Number of Reviews')
+plt.show()
+
+print("\n phase 1 completed successfully ")
