@@ -1,0 +1,19 @@
+============================================================
+PHASE 3 - CLUSTER PROFILES
+============================================================
+
+Cluster 0:
+  • Average rating: 3.37 stars
+  • Average review count: 16 reviews
+  • Average price: $88
+
+Cluster 1:
+  • Average rating: 4.83 stars
+  • Average review count: 13 reviews
+  • Average price: $300
+
+Cluster 2:
+  • Average rating: 4.33 stars
+  • Average review count: 66 reviews
+  • Average price: $210
+
