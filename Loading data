@@ -1,0 +1,14 @@
+import gzip
+import json
+
+path = r"C:\Users\TsiWe\Downloads\Electronics_5.json.gz"
+
+data = []
+with gzip.open(path, 'rt', encoding='utf-8') as f:
+    for i, line in enumerate(f):
+        # Start with a sample of 100,000 to keep it fast
+        if i >= 100000: 
+            break
+        data.append(json.loads(line))
+
+print(f"Successfully loaded {len(data)} rows.")
