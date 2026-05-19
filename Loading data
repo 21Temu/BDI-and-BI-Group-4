@@ -1,7 +1,8 @@
 import gzip
 import json
 
-path = r"C:\Users\TsiWe\Downloads\Electronics_5.json.gz"
+# Update this path to point to your dataset location
+path = "Electronics_5.json.gz"
 
 data = []
 with gzip.open(path, 'rt', encoding='utf-8') as f:

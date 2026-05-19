@@ -1,4 +1,6 @@
 @echo off
-cd /d C:\Users\Temu\OneDrive\Desktop\amazon_projects
-C:\Users\Temu\AppData\Local\Python\pythoncore-3.14-64\python.exe -m notebook
+REM Change to the directory where this script is located
+cd /d "%~dp0"
+REM Launch Jupyter Notebook using Python from PATH
+python -m notebook
 pause
