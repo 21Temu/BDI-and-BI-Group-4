@@ -16,5 +16,5 @@ for line in sys.stdin:
         # The tab separates key (product) from value (rating)
         print(f"{product_id}\t{rating}")
     except:
-        # Skip lines that can't be parsed
+        # Skip line that can't be parsed
         continue
