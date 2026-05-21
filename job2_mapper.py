@@ -1,4 +1,4 @@
-# mapper.py - Job 2: Extract reviewer ID (count 1 per review)
+# mapper.py - Job 2: Extract reviewer ID 
 import sys
 import json
 
