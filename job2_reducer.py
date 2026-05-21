@@ -1,4 +1,4 @@
-# reducer.py - Job 2: Count total reviews per user
+# reducer.py - Job 2: Count total reviews/user
 import sys
 
 current_user = None
