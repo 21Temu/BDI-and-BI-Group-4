@@ -1,36 +1,52 @@
-# mapper.py - Job 2: Extract reviewer ID 
+# mapper.py - Job 2: Extract reviewer ID for review counting
+
 import sys
 import json
+from typing import Optional
 
 
-def process_review(review_line):
+DEFAULT_REVIEWER_ID = "unknown"
+
+
+def process_review(review_line: str) -> Optional[str]:
     """
-    Process a single review record and extract reviewer ID.
+    Process a review record and return mapper output.
 
-    Args:
-        review_line (str): JSON review record
+    Parameters:
+        review_line (str): JSON review input line
 
     Returns:
-        str: reviewer_id with count value
+        Optional[str]:
+            reviewerID with count value in mapper format
+            Example: A123XYZ\t1
     """
 
     try:
-        review_data = json.loads(review_line)
+        review_data = json.loads(review_line.strip())
 
-        # Extract reviewer ID
-        reviewer_id = review_data.get("reviewerID", "unknown")
+        reviewer_id = review_data.get(
+            "reviewerID",
+            DEFAULT_REVIEWER_ID
+        )
 
-        # Return mapper output format
         return f"{reviewer_id}\t1"
 
     except json.JSONDecodeError:
         return None
 
 
-# Read input from Hadoop streaming
-for line in sys.stdin:
+def main() -> None:
+    """
+    Read input stream and process review records.
+    """
 
-    output = process_review(line)
+    for line in sys.stdin:
 
-    if output:
-        print(output)
+        output = process_review(line)
+
+        if output is not None:
+            print(output)
+
+
+if __name__ == "__main__":
+    main()
