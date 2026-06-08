@@ -1,7 +1,7 @@
 import gzip 
 import json 
  
-# Dataset path matching project README configuration 
+
 path = "Electronics_sample_50k.json.gz" 
  
 data = [] 
