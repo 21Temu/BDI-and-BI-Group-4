@@ -1,5 +1,5 @@
 PHASE 2 - MAPREDUCE RESULTS
-============================================================
+
 
 JOB 1: Average Rating Per Product (Top 10)
 1. 1059998254: 5.00 stars
